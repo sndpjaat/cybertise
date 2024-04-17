@@ -393,7 +393,9 @@ padding-bottom: 64px;
     width: 100%;
     height: 100%;
 }
-
+.pt-48{
+    padding-top: 48px;
+}
 @media (max-width:992px) {
     .menuList {
         flex-direction: column;
