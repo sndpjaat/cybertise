@@ -12,13 +12,15 @@
 </head>
 
 <body>
-    <section class="backgroundimg-1 ">
+    <section class="backgroundimg-1 position-relative min-vh-100 overflow-x-hidden">
+        <div class="gradient_hero position-absolute"></div>
+        <div class="light_black position-absolute"></div>
 
         <div class="nav_bg">
             <div class=" container max-w-1440">
                 <nav class="d-flex nav-py align-items-center justify-content-between">
-                    <div class=" d-flex gap_4 align-items-center">
-                        <img class="cp" src="./assets/imags/logo.png" alt="logo">
+                    <div class=" d-flex gap_4 align-items-center z-1 cursor-pointer">
+                        <img class="cp logo-width" src="./assets/imags/logo.png" alt="logo">
 
                     </div>
 
@@ -26,28 +28,32 @@
                         id="navbar">
                         <ul
                             class=" menuList d-flex gap-46 gap-32  m-0 p-0 justify-content-center flex-column flex-lg-row align-items-center">
-                            <li><a href="#home"
+                            <li><a href="#Home"
                                     class=" ff-outfit fw-400 fs-md lh-24  c-white textanimation hoverline hoverline op-80">Home</a>
                             </li>
-                            <li><a href="#"
+                            <li><a href="#About"
                                     class="ff-outfit fw-400 fs-md lh-24  c-white textanimation hoverline hoverline op-80">About</a>
                             </li>
-                            <li><a href="#"
+                            <li><a href="#Product"
                                     class=" ff-outfit fw-400 fs-md lh-24  c-white textanimation hoverline hoverline op-80">Product</a>
                             </li>
-                            <li><a href="#"
+                            <li><a href="#Contact"
                                     class=" ff-outfit fw-400 fs-md lh-24  c-white textanimation hoverline hoverline op-80">Contact</a>
                             </li>
                         </ul>
 
-                        <!-- <ul class=" m-0 p-0">
-                            <li> <button class=" btn-1 fw-6 fs-lg lh-24 c-white text-nowrap d-none d-md-block">Connect
-                                    wallet</button>
-                            </li>
-                        </ul> -->
+                        <div class="d-flex gap-10 align-items-center">
+                            <div class="d-flex gap-10 z-1 cursor-pointer">
+                                <img src="./assets/imags/svg/eflg.svg" alt="svg/eflg.svg">
+                                <img src="./assets/imags/svg/grmnyflg.svg" alt="grmnyflg.svg">
+
+                            </div>
+
+                        </div>
+
                     </div>
 
-                    <div class="menuIcon d-block d-lg-none ">
+                    <div class="menuIcon  d-block d-lg-none ">
                         <span class="bar1"></span>
                         <span class="bar2"></span>
                         <span class="bar3"></span>
@@ -55,52 +61,99 @@
                 </nav>
             </div>
         </div>
-        <div class="container pb-226">
+        <div class="container pb-226" id="Home">
             <div class="d-flex flex-column justify-content-center align-items-center">
-                <div class="pt-137 pb-23">
+                <div class="pt-137 pb-23 z-1">
                     <img src="./assets/imags/spexcap.png" alt="spexcap.png" class="w-100">
                 </div>
-                <h3 class="c-white fw-600 lh-61 fs-2xl max-w-582 text-center ff-outfit mb-0 pb-35">Experts in Cyber
+                <h3 class="c-white fw-600 lh-61 fs-2xl max-w-582 text-center ff-outfit mb-0 pb-35 z-1">Experts in Cyber
                     Security</h3>
-                <button class="btn-1 fw-500 fs-md lh-24 ff-outfit ">Discover</button>
+                <button class="btn-1 fw-500 fs-md lh-24 ff-outfit z-1">Discover</button>
             </div>
 
         </div>
 
     </section>
+    <section class="bg-black">
+        <div class="container mx-auto W_1140">
+            <div class="d-flex align-items-center justify-content-center flex-column pt-31">
+                <div class="one-k-box backgroundimg-6 w-100 z-1">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="d-flex flex-column gap-16">
+                                <h4 class="ff-outfit mb-0 fw-500 fs-xl lh-52 text-center d-green">1K+</h4>
+                                <p
+                                    class=" ff-outfit fw-400 nav_p fs-lg c-white op-80 text-center lh-26 mb-0 text-nowrap">
+                                    Partners Globally</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4 pt-4 pt-sm-0">
+                            <div class="d-flex flex-column gap-16">
+                                <h4 class="ff-outfit mb-0 fw-500 fs-xl lh-52 text-center d-green">120+</h4>
+                                <p
+                                    class="ff-outfit fw-400 nav_p fs-lg c-white op-80 text-center lh-26 mb-0 text-nowrap">
+                                    Countries
+                                    Served</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4 pt-4 pt-lg-0">
+                            <div class="d-flex flex-column gap-16">
+                                <h4 class="ff-outfit mb-0 fw-500 fs-xl lh-52 text-center d-green">350K+</h4>
+                                <p class="ff-outfit fw-400 nav_p fs-lg c-white op-80 text-center lh-26 mb-0">Users
+                                    Worldwide</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="bg-black position-relative">
-        <div class="position-absolute z-0 frst-2">
+        <div class="position-absolute z-1 frst-2 d-none d-md-block">
             <img src="./assets/imags/svg/frst.svg" alt="frst.svg">
 
         </div>
         <div class="container max-w-1140 mx-auto">
-            <div class="row pt-103">
-                <div class="col-12 col-md-6">
+            <div class="row pt-103 pb-60">
+                <div class="col-12 col-md-5 d-flex justify-content-start flex-column align-items-center z-2">
                     <img src="./assets/imags/item-1.png" alt="item-1.png" class="w-100">
                 </div>
 
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-7 d-flex flex-column justify-content-end align-items-center z-2">
                     <h2 class="max-w-527 ff-outfit fw-400 lh-57 fs-xl mb-0 c-white pb-16">Are you sure your <span
                             class="d-green">Data Is Safe</span>? Neither are we.</h2>
-                    <p class="max-w-511 op-80 ff-outfit fw-400 fs-md lh-24 c-white pb-10 mb-0">In today's digital world,
-                        the risk of cyber attacks is constantly increasing. It is no longer the hackers themselves who
-                        exploit security gaps in systems to enrich themselves on a smaller scale. In the meantime, it is
-                        more about criminal structures that acquire weak points on the hacker black market in order to
-                        later extort large ransom sums.</p>
-                    <p class="max-w-507 op-80 ff-outfit fw-400 fs-md lh-24 c-white mb-0 ">Statistics from the German
-                        Federal Office for Information Security (BSI) show that the number of vulnerabilities in
-                        commercial software has increased significantly compared to the previous year. In addition,
-                        there is a large number of unreported vulnerabilities that have not yet been discovered. This is
-                        exactly where Cybertise comes in: we find weaknesses in IT systems.</p>
+                    <div class="green-lin ps-3">
+                        <p class="max-w-511 op-80 ff-outfit fw-400 fs-md lh-24 c-white pb-10 mb-0">In today's digital
+                            world,
+                            the risk of cyber attacks is constantly increasing. It is no longer the hackers themselves
+                            who
+                            exploit security gaps in systems to enrich themselves on a smaller scale. In the meantime,
+                            it is
+                            more about criminal structures that acquire weak points on the hacker black market in order
+                            to
+                            later extort large ransom sums.</p>
+                        <p class="max-w-507 op-80 ff-outfit fw-400 fs-md lh-24 c-white mb-0 ">Statistics from the German
+                            Federal Office for Information Security (BSI) show that the number of vulnerabilities in
+                            commercial software has increased significantly compared to the previous year. In addition,
+                            there is a large number of unreported vulnerabilities that have not yet been discovered.
+                            This is
+                            exactly where Cybertise comes in: we find weaknesses in IT systems.</p>
+                    </div>
+
                 </div>
 
             </div>
         </div>
     </section>
-    <section class=" backgroundimg-2">
+
+    <section class=" backgroundimg-2 bg-black position-relative">
+        <div class="position-absolute z-0">
+            <img src="./assets/imags/svg/footrelps.svg" alt="footrelps.svg" class="w-100">
+
+        </div>
         <div class="container max-w-1440 ">
 
-            <div class="d-flex flex-column justify-content-center align-items-center">
+            <div class="d-flex flex-column justify-content-center align-items-center pt-30">
                 <h2 class="fw-400 ff-outfit fs-xl lh-57 mb-0 c-white pb-16">Our <span class="d-green">Services</span>
                 </h2>
                 <p class="c-white op-80 fw-400 fs-md lh-24 text-center mb-0 max-w-628 pb-40 ">Dolor ipsum facilisi
@@ -108,76 +161,80 @@
                     dolor dui est. </p>
 
             </div>
-            <div class="row">
-                
-                    <div class="col-12 col-md-6 col-lg-4 d-flex gap-16">
-                        <div
-                            class="ccrd-box d-flex flex-column justify-content-center align-items-center backgroundimg-3">
-                            <div class="mini-box d-flex justify-content-center align-items-center">
-                                <img src="./assets/imags/svg/greenkeys.svg" alt="greenkeys.svg">
+            <div class="row pb-140">
 
-                            </div>
-                            <h3 class="c-white fw-600 ff-outfit lh-33 fs-lg pt-20 pb-2 mb-0">Pentesting</h3>
-                            <p class="c-white op-80 ff-outfit fw-400 fs-md lh-24 max-w-328 text-center">Cybertise's
-                                pentesting enhances digital security with manual 'BlackBox' and 'GreyBox' tests
-                                emulating real attacks, offering risk solutions for diverse systems.</p>
+                <div class="col-12 col-md-6 col-lg-4 d-flex gap-16 pt-4 z-3">
+                    <div class="ccrd-box d-flex flex-column justify-content-center align-items-center backgroundimg-3">
+                        <div class="mini-box d-flex justify-content-center align-items-center">
+                            <img src="./assets/imags/svg/greenkeys.svg" alt="greenkeys.svg">
 
                         </div>
+                        <h3 class="c-white fw-600 ff-outfit lh-33 fs-lg pt-20 pb-2 mb-0">Pentesting</h3>
+                        <p class="c-white op-80 ff-outfit fw-400 fs-md lh-24 max-w-328 text-center mb-0">Cybertise's
+                            pentesting enhances digital security with manual 'BlackBox' and 'GreyBox' tests
+                            emulating real attacks, offering risk solutions for diverse systems.</p>
 
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4 d-flex gap-16">
-                        <div
-                            class="ccrd-box d-flex flex-column justify-content-center align-items-center backgroundimg-3">
-                            <div class="mini-box d-flex justify-content-center align-items-center">
-                                <img src="./assets/imags/svg/groupgrl.svg" alt="groupgrl.svg">
 
-                            </div>
-                            <h3 class="c-white fw-600 ff-outfit lh-33 fs-lg pt-20 pb-2 mb-0">Crowd-Sourced Pentests</h3>
-                            <p class="c-white op-80 ff-outfit fw-400 fs-md lh-24 max-w-328 text-center">Cybertise
-                                advances beyond pen tests, employing expert teams to comprehensively probe targets from
-                                multiple angles, ensuring precise, efficient vulnerability
-                                identification.</p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 d-flex gap-16 pt-4 z-3">
+                    <div class="ccrd-box d-flex flex-column justify-content-center align-items-center backgroundimg-3">
+                        <div class="mini-box d-flex justify-content-center align-items-center">
+                            <img src="./assets/imags/svg/groupgrl.svg" alt="groupgrl.svg">
 
                         </div>
+                        <h3 class="c-white fw-600 ff-outfit lh-33 fs-lg pt-20 pb-2 mb-0">Crowd-Sourced Pentests</h3>
+                        <p class="c-white op-80 ff-outfit fw-400 fs-md lh-24 max-w-319 text-center mb-0">Cybertise
+                            advances beyond pen tests, employing expert teams to comprehensively probe targets from
+                            multiple angles, ensuring precise, efficient vulnerability
+                            identification.</p>
 
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4 d-flex gap-16">
-                        <div
-                            class="ccrd-box d-flex flex-column justify-content-center align-items-center backgroundimg-3">
-                            <div class="mini-box d-flex justify-content-center align-items-center">
-                                <img src="./assets/imags/svg/plock.svg" alt="plock.svg">
 
-                            </div>
-                            <h3 class="c-white fw-600 ff-outfit lh-33 fs-lg pt-20 pb-2 mb-0">VRP</h3>
-                            <p class="c-white op-80 ff-outfit fw-400 fs-md lh-24 max-w-328 text-center">Cybertise's VRP
-                                (BugBounty) is the ultimate security step, eradicating last vulnerabilities with swift
-                                incident response. Elevates security beyond pentesting.</p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 d-flex gap-16 pt-4 z-3">
+                    <div class="ccrd-box d-flex flex-column justify-content-center align-items-center backgroundimg-3">
+                        <div class="mini-box d-flex justify-content-center align-items-center">
+                            <img src="./assets/imags/svg/plock.svg" alt="plock.svg">
 
                         </div>
+                        <h3 class="c-white fw-600 ff-outfit lh-33 fs-lg pt-20 pb-2 mb-0">VRP</h3>
+                        <p class="c-white op-80 ff-outfit fw-400 fs-md lh-24 max-w-328 text-center">Cybertise's VRP
+                            (BugBounty) is the ultimate security step, eradicating last vulnerabilities with swift
+                            incident response. Elevates security beyond pentesting.</p>
+
                     </div>
-                
+                </div>
+
             </div>
         </div>
     </section>
     <section class="bg-black position-relative">
-        <div class="position-absolute z-0 greencrcle-4 ">
+        <div class="position-absolute z-0 greencrcle-4 d-none d-md-block ">
             <img src="./assets/imags/svg/greencrcle.svg" alt="greencrcle.svg">
 
         </div>
         <div class="container max-w-1140 mx-auto">
-            <div class="row pt-89 pb-79">
+            <div class="row pt-89 pb-79 flex-column-reverse flex-md-row">
                 <div class="col-12 col-md-6">
                     <h2 class="ff-outfit fw-400 fs-xl lh-57 c-white mb-0 pb-10">Offensive <span class="d-green">Security
                             Experts</span></h2>
-                    <p class="ff-outfit fw-400 fs-md lh-24 mb-0 max-w-507 c-white op-80 pb-10">Cybertise offers
-                        offensive security services that help your company to make the systems of your external IT
-                        landscape more secure. This approach simulates attacks to expose vulnerabilities that may not
-                        have been detected by defensive measures. In addition, this strategy can help to test and
-                        evaluate the effectiveness of existing security measures.</p>
-                    <p class="ff-outfit fw-400 fs-md lh-24 mb-0 max-w-507 c-white op-80">Our core competence lies in the
-                        implementation of various pentesting services that are specially tailored to the needs of our
-                        customers. In addition to this, we also offer other services in this area. Below you will find
-                        an overview of our service portfolio.</p>
+                    <div class="green-lin ps-3">
+                        <p class="ff-outfit fw-400 fs-md lh-24 mb-0 max-w-507 c-white op-80 pb-10">Cybertise offers
+                            offensive security services that help your company to make the systems of your external IT
+                            landscape more secure. This approach simulates attacks to expose vulnerabilities that may
+                            not
+                            have been detected by defensive measures. In addition, this strategy can help to test and
+                            evaluate the effectiveness of existing security measures.</p>
+                        <p class="ff-outfit fw-400 fs-md lh-24 mb-0 max-w-507 c-white op-80">Our core competence lies in
+                            the
+                            implementation of various pentesting services that are specially tailored to the needs of
+                            our
+                            customers. In addition to this, we also offer other services in this area. Below you will
+                            find
+                            an overview of our service portfolio.</p>
+                    </div>
+
                 </div>
                 <div class="col-12 col-md-6">
                     <img src="./assets/imags/img-3.png" alt="img-3.png" class="w-100">
@@ -186,7 +243,11 @@
             </div>
         </div>
     </section>
-    <section class="bg-black backgroundimg-4 ">
+    <section class="bg-black position-relative ">
+        <div class="position-absolute z-0 frthrilps-11 d-none d-md-block ">
+            <img src="./assets/imags/svg/frthrilps.svg" alt="frthrilps.svg">
+        </div>
+        <img class="position-absolute w-100 h-100" src="./assets/imags/service_bg.webp" alt="service_bg">
         <div class="container max-w-1152 mx-auto">
             <div class="row pt-79 pb-79">
                 <div class="col-12 col-md-6">
@@ -197,20 +258,21 @@
                             class="d-green">Services</span></h2>
                     <p class="max-w-513 c-white op-80 fw-400 fs-md lh-24 pb-10 mb-0">Neben den oben genannten
                         Kernkompetenzen bieten wir auch weitere IT-Sicherheitsdienstleistungen in diesem Bereich an.</p>
-                    <div class="bodr-lft">
-                        <p class="c-white fw-600 lh-33 ff-outfit fs-lg pb-10 mb-0">Awareness Audits</p>
+
+                    <p class="c-white fw-600 lh-33 ff-outfit fs-lg pb-10 mb-0">Awareness Audits</p>
+                    <div class="green-lin ps-3">
                         <p class="c-white op-80 mb-0 fw-400 fs-md lh-24 ff-outfit pb-10">We conduct simulated phishing
                             tests and social engineering audits to gauge employee readiness, offering guidance and
                             training if needed.</p>
                     </div>
-                    <div class="bodr-lft">
-                        <p class="c-white fw-600 lh-33 ff-outfit fs-lg pb-10 mb-0">Vulnerability Management</p>
+                    <p class="c-white fw-600 lh-33 ff-outfit fs-lg pb-10 mb-0">Vulnerability Management</p>
+                    <div class="green-lin ps-3">
                         <p class="c-white op-80 mb-0 fw-400 fs-md lh-24 ff-outfit pb-10">Our Managed VAS enhances
                             network security through automated scans, adaptable to various assets, with setup and
                             support services provided.</p>
                     </div>
-                    <div class="bodr-lft">
-                        <p class="c-white fw-600 lh-33 ff-outfit fs-lg pb-10 mb-0">crisis management</p>
+                    <p class="c-white fw-600 lh-33 ff-outfit fs-lg pb-10 mb-0">crisis management</p>
+                    <div class="green-lin ps-3">
                         <p class="c-white op-80 mb-0 fw-400 fs-md lh-24 ff-outfit pb-10">Cybertise offers rapid,
                             dependable crisis management aid for cyber attacks, swiftly restoring operations and
                             minimizing impact through expert collaboration.</p>
@@ -220,14 +282,23 @@
         </div>
 
     </section>
-    <section class="bg-black ">
+    <section class="bg-black position-relative ">
+        <div class="position-absolute z-0 globelps-12 d-none d-md-block">
+
+            <img src="./assets/imags/svg/globelps.svg" alt="globelps.svg">
+        </div>
+        <div class="position-absolute z-0 midglopelps d-none d-md-block" aria-colcount="w-100">
+            <img src="./assets/imags/svg/midglopelps.svg" alt="midglopelps.svg" class="w-100">
+
+        </div>
+
         <div class="container max-w-1107 mx-auto">
             <div class="d-flex flex-column justify-content-center align-items-center">
                 <h2 class="max-w-725 c-white ff-outfit fw-400 fs-xl lh-57 mb-0 text-center">Decentralized
                     infrastructure, <span class="d-green">globally distributed</span>.</h2>
 
             </div>
-            <div>
+            <div class="pt-60 pb-71">
                 <img src="./assets/imags/gmap.png" alt="gmap.png" class="w-100">
             </div>
 
@@ -236,66 +307,88 @@
 
     </section>
     <section class="bg-black">
-        <div class="inputbox max-w-1140 ">
-            <div class="d-flex flex-column justify-content-center align-items-center">
-                <h2 class="c-white max-w-308 ff-outfit fw-400 fs-xl lh-57 mb-0 text-center pb-10">Get into <span
-                        class="d-green">touch</span></h2>
-                <p class="c-white op-80 fw-400 fs-md lh-24 mb-0 max-w-680 text-center">Defend your business against
-                    online threats while leveraging our IT security expertise and experience for comprehensive
-                    protection and peace of mind.</p>
+        <div class="container max-w-1045 mx-auto pb-50 pb-140">
+            <div class="input_box backgroundimg-9 z-2">
+                <div class="d-flex flex-column align-items-center justify-content-center p-64">
+                    <h3 class="ff-outfit fw-400 fs-xl lh-57 c-white mb-0 max-w-725 text-center z-2">Get into
+                        <span class="d-green">touch</span>
+                    </h3>
+                    <p class="mb-0 ff-outfit fw-400 pb-32 c-white fs-md lh-24 text-center max-w-628 crd_p pt-2 z-2">
+                        Defend your
+                        business against online threats while leveraging our IT security expertise and
+                        experience for comprehensive
+                        protection and peace of mind.</p>
+                    <div class="d-flex flex-column gap-3 w-100 align-items-center z-2">
+                        <form action="action_page.php"
+                            class="formdiv d-flex align-items-center justify-content-between w-100">
+                            <input type="email" id="empyt" placeholder="Enter your email address"
+                                style="border: none; outline: none;"
+                                class="bg-transparent pe-2 w-100 ff-outfit col_black c-white fs-md lh-24 fw-400">
+                            <button
+                                class="btn_bg ff-outfit fs-md fw-500  lh-24 btn-1 text-nowrap d-none d-sm-block ">Sign
+                                up</button>
+                        </form>
+                        <button class="btn_bg ff-outfit fs-md fw-500  lh-24 btn-1 text-nowrap d-sm-none">Sign
+                            up</button>
+                    </div>
+                </div>
             </div>
-
-            
 
         </div>
     </section>
-    <footer class="bg-black">
+    <footer class="bg-black position-relative">
+        <img class="position-absolute w-100 h-100" src="./assets/imags/Ellipse-footer.png" alt="Ellipse-footer">
         <div class="container">
             <div class="row pt-20 pb-69">
-                <div class="col-12 col-md-5">
+                <div class="col-12 col-md-5 z-1">
 
-                    <img src="./assets/imags/logo.png" alt="logo.png">
-                    <p class="c-white op-80 max-w-373 ff-oufit fw-400 fs-md lh-24">Lorem Ipsum is simply dummy text of
+                    <img src="./assets/imags/logo.png" alt="logo.png" class="cursor-pointer">
+                    <p class="c-white op-80 max-w-373 ff-oufit fw-400 fs-md lh-24 pt-3">Lorem Ipsum is simply dummy text
+                        of
                         the printing and typesettin industry.</p>
 
 
                 </div>
-                <div class="col-12 col-md-7 pt-63">
+
+                <div class="col-12 col-md-7 pt-63 z-1">
                     <div class="row">
-                        <div class="col-12 col-sm-6 col-md-4 pt-82 d-flex justify-content-md-start">
-                            <div class="d-flex flex-column gap_12">
+                        <div
+                            class="col-12 col-sm-6 col-md-4 pt-82 d-flex justify-content-lg-start justify-content-start pt-4 pt-md-0 z-2">
+                            <div class="d-flex flex-column gap-12">
                                 <h3 class="fs-md fw-500 ff-outfit lh-24 c-white ">Quick Links</h3>
 
                                 <ul class="d-flex  flex-column gap-2 p-0 m-0 ">
-                                    <li><a href="#" class="c-white fw-400 fs-md lh-24 ff-outfit ">Home</a></li>
-                                    <li><a href="#" class="c-white fw-400 fs-md lh-24 ff-outfit ">About</a></li>
-                                    <li><a href="#" class="c-white fw-400 fs-md lh-24 ff-outfit ">Product</a></li>
-                                    <li><a href="#" class="c-white fw-400 fs-md lh-24 ff-outfit ">Contact</a></li>
+                                    <li><a href="#" class="c-white fw-400 fs-md lh-24 ff-outfit textanimation hoverline hoverline ">Home</a></li>
+                                    <li><a href="#" class="c-white fw-400 fs-md lh-24 ff-outfit textanimation hoverline hoverline ">About</a></li>
+                                    <li><a href="#" class="c-white fw-400 fs-md lh-24 ff-outfit textanimation hoverline hoverline ">Product</a></li>
+                                    <li><a href="#" class="c-white fw-400 fs-md lh-24 ff-outfit textanimation hoverline hoverline ">Contact</a></li>
                                 </ul>
 
 
                             </div>
                         </div>
 
-                        <div class="col-12 col-sm-6 col-md-4 pt-82 d-flex justify-content-md-end">
-                            <div class="d-flex flex-column gap_12">
+                        <div class="col-12 col-sm-6 col-md-4  mt-200 pt-4 pt-md-0 z-2">
+                            <div class="d-flex flex-column gap-12">
                                 <h3 class="fs-md fw-500 ff-outfit lh-24 c-white">Links</h3>
                                 <ul class="d-flex  flex-column gap-2 p-0 m-0 ">
-                                    <li><a href="#" class="c-white fw-400 fs-md lh-24 ff-outfit op-90">Privacy
+                                    <li><a href="#" class="c-white fw-400 fs-md lh-24 ff-outfit op-90 textanimation hoverline hoverline">Privacy
                                             Policy</a></li>
-                                    <li><a href="#" class=" c-white fw-400 fs-md lh-24 ff-outfit op-90 ">Terms of
+                                    <li><a href="#" class=" c-white fw-400 fs-md lh-24 ff-outfit op-90 textanimation hoverline hoverline ">Terms of
                                             Service</a></li>
                                 </ul>
                             </div>
                         </div>
 
-                        <div class="col-12 col-sm-6 col-md-4 pt-82  d-flex justify-content-md-center">
-                            <div class="d-flex flex-column gap_12">
+                        <div
+                            class="col-12 col-sm-6 col-md-4 pt-82  d-flex justify-content-lg-center justify-content-start pt-4 pt-md-0 z-2">
+                            <div class="d-flex flex-column gap-12">
                                 <h3 class="fs-md fw-500 ff-outfit lh-24 c-white">Information</h3>
                                 <ul class="d-flex gap-3 p-0 m-0">
 
 
-                                    <li><a href="tel:+" class="fs-sm lh-24 m-0 text-footer text-nowrap c-white"><span>
+                                    <li><a href="tel:+" class="fs-sm lh-24 m-0 text-footer text-nowrap c-white textanimation hoverline hoverline"><span
+                                                class="pe-2">
 
                                                 <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
@@ -327,7 +420,8 @@
                                 </ul>
 
                                 <ul class="p-0 m-0">
-                                    <li><a href="mailto:" class="fs-sm lh-24 m-0 text-footer text-nowrap c-white"><span>
+                                    <li><a href="mailto:" class="fs-sm lh-24 m-0 text-footer text-nowrap c-white textanimation hoverline hoverline"><span
+                                                class="pe-2">
 
                                                 <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
@@ -348,14 +442,107 @@
 
                                             </span>+012 345 67890</a></li>
                                 </ul>
-
-
+                                <p class=" ff-outfit mb-0 fw-500 fs-md lh-24 c-white pb-12 pt-4">Follow us
+                                </p>
+                                <ul class="d-flex gap-10 p-0 m-0">
+                                    <li><a href="https://www.facebook.com/" target="_blank"><svg width="28" height="28"
+                                                viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect width="28" height="28" rx="14" fill="url(#paint0_linear_0_1084)"
+                                                    fill-opacity="0.1" />
+                                                <path
+                                                    d="M14.5383 6.19922C12.9047 6.79688 12.0414 8.11172 11.8422 10.3031L11.7492 11.3125H10.3813H9V12.9727V14.6328H10.3945H11.7891V18.8164V23H13.9805H16.1719V18.8164V14.6328H17.5664H18.9609V12.9727V11.3125H17.5664H16.1719V10.7148C16.1719 9.43984 16.7031 9.05469 18.4695 9.05469H19.3594V7.52734V6L17.2078 6.01328C15.707 6.01328 14.8836 6.07969 14.5383 6.19922ZM18.5625 7.52734V8.25781H17.8055C16.8227 8.25781 15.9992 8.62969 15.6406 9.21406C15.4281 9.57266 15.375 9.87812 15.375 10.9406V12.2422H16.7695H18.1641V13.0391V13.8359H16.7695H15.375V18.0195V22.2031H13.9805H12.5859V18.0195V13.8359H11.1914H9.79688V13.0391V12.2555L11.1648 12.2156L12.5195 12.1758L12.6125 10.9805C12.7984 8.77578 13.3563 7.71328 14.6313 7.11562C15.2289 6.83672 15.5078 6.79688 16.9422 6.79688H18.5625V7.52734Z"
+                                                    fill="white" />
+                                                <defs>
+                                                    <linearGradient id="paint0_linear_0_1084" x1="1.189"
+                                                        y1="-9.11997e-06" x2="35.4005" y2="4.77811"
+                                                        gradientUnits="userSpaceOnUse">
+                                                        <stop offset="1" stop-color="#BAFF00" />
+                                                        <stop offset="1" stop-color="#00B2FE" />
+                                                    </linearGradient>
+                                                </defs>
+                                            </svg>
+                                        </a></li>
+                                    <li><a href="https://www.instagram.com/accounts/login/" target="_blank"><svg
+                                                width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <rect width="28" height="28" rx="14" fill="url(#paint0_linear_0_1086)"
+                                                    fill-opacity="0.1" />
+                                                <path
+                                                    d="M14 17.5554C14.943 17.5554 15.8474 17.1808 16.5142 16.514C17.181 15.8473 17.5556 14.9429 17.5556 13.9999C17.5556 13.0569 17.181 12.1525 16.5142 11.4857C15.8474 10.8189 14.943 10.4443 14 10.4443C13.057 10.4443 12.1527 10.8189 11.4859 11.4857C10.8191 12.1525 10.4445 13.0569 10.4445 13.9999C10.4445 14.9429 10.8191 15.8473 11.4859 16.514C12.1527 17.1808 13.057 17.5554 14 17.5554Z"
+                                                    stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path
+                                                    d="M6 17.5556V10.4444C6 9.2657 6.46825 8.13524 7.30175 7.30175C8.13524 6.46825 9.2657 6 10.4444 6H17.5556C18.7343 6 19.8648 6.46825 20.6983 7.30175C21.5317 8.13524 22 9.2657 22 10.4444V17.5556C22 18.7343 21.5317 19.8648 20.6983 20.6983C19.8648 21.5317 18.7343 22 17.5556 22H10.4444C9.2657 22 8.13524 21.5317 7.30175 20.6983C6.46825 19.8648 6 18.7343 6 17.5556Z"
+                                                    stroke="white" />
+                                                <path d="M18.8889 9.12013L18.8978 9.11035" stroke="white"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                <defs>
+                                                    <linearGradient id="paint0_linear_0_1086" x1="1.189"
+                                                        y1="-9.11997e-06" x2="35.4005" y2="4.77811"
+                                                        gradientUnits="userSpaceOnUse">
+                                                        <stop offset="1" stop-color="#BAFF00" />
+                                                        <stop offset="1" stop-color="#00B2FE" />
+                                                    </linearGradient>
+                                                </defs>
+                                            </svg>
+                                        </a></li>
+                                    <li><a href="https://twitter.com/?lang=en" target="_blank"><svg width="28"
+                                                height="28" viewBox="0 0 28 28" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <rect width="28" height="28" rx="14" fill="url(#paint0_linear_0_1091)"
+                                                    fill-opacity="0.1" />
+                                                <path
+                                                    d="M17.0875 7.01804C16.885 7.04792 16.5231 7.14419 16.3305 7.21723C15.235 7.62557 14.3818 8.59497 14.0863 9.76688C14.0166 10.0491 13.9668 10.6267 13.99 10.9056L14.01 11.1446H13.8141C13.5353 11.1446 12.848 11.0251 12.443 10.9089C11.3641 10.5935 10.2751 10.0026 9.21943 9.15603C8.82437 8.84064 8.07076 8.14347 7.88485 7.92104C7.47319 7.43302 7.19764 7.60898 6.88225 8.55846C6.61666 9.35854 6.63991 10.1453 6.94865 10.9455C7.04493 11.201 7.31715 11.7289 7.40347 11.8351C7.42007 11.8584 7.37027 11.8384 7.29059 11.792C7.11464 11.6924 7.01173 11.6891 6.87229 11.7754C6.73286 11.8584 6.71626 11.938 6.7395 12.4194C6.78266 13.2926 7.11797 14.0993 7.67902 14.6836C7.78857 14.7931 7.94129 14.9392 8.02428 15.0056L8.17367 15.1251L8.08404 15.1583C7.81513 15.2613 7.83173 15.5766 8.14048 16.1908C8.55878 17.0208 9.25927 17.635 10.1191 17.9171C10.2353 17.9537 10.3515 17.9935 10.3781 18.0034C10.5075 18.0466 9.65765 18.5047 9.16631 18.6575C8.65173 18.8201 8.21352 18.8865 7.55618 18.9031C7.18104 18.9164 6.80921 18.9064 6.60339 18.8832C6.2382 18.84 6.10873 18.8699 6.03237 19.0093C5.98921 19.0924 5.98921 19.2982 6.03237 19.3778C6.07885 19.4675 6.78266 19.929 7.18104 20.1315C7.99108 20.5464 8.87085 20.8186 9.983 20.9913C10.5308 21.0776 12.3401 21.0809 12.9277 20.9946C13.6581 20.8917 14.7735 20.5598 15.5438 20.2178C16.3206 19.8759 17.1439 19.3811 17.7514 18.8965C18.432 18.352 19.2454 17.4358 19.7234 16.6721C20.6331 15.228 21.2207 13.2893 21.2937 11.5032L21.3136 10.9852L21.8481 10.4408C22.4225 9.85984 22.6914 9.54777 22.8807 9.2357C23.0732 8.917 23.0301 8.66137 22.7711 8.59165C22.6616 8.55846 22.625 8.56841 22.3826 8.6846C22.2366 8.75764 22.0739 8.82736 22.0241 8.84064C21.9278 8.86388 21.9278 8.86056 22.0839 8.65141C22.5055 8.0804 22.6449 7.5127 22.4092 7.32679C22.2731 7.22055 22.1104 7.24047 21.8714 7.39318C21.3601 7.72517 20.6862 7.95755 20.238 7.95755C20.102 7.95755 20.0555 7.94096 19.9525 7.84468C19.5143 7.45626 18.8105 7.12759 18.2096 7.028C18.0104 6.99812 17.2667 6.98816 17.0875 7.01804ZM18.3988 7.77497C18.8702 7.9144 19.1591 8.0804 19.6637 8.50534L19.8197 8.63813L20.1882 8.63149C20.5501 8.62485 20.9385 8.55846 21.2638 8.44226L21.4066 8.39246L21.3369 8.48873C21.3004 8.54185 21.1111 8.72445 20.9186 8.89044C20.726 9.05975 20.5567 9.22243 20.5368 9.25562C20.4439 9.43157 20.56 9.6872 20.7559 9.737C20.8356 9.75692 21.5162 9.67724 21.6589 9.63076C21.6921 9.62081 21.4763 9.84656 21.1842 10.1387L20.6497 10.6632L20.6297 11.3438C20.5799 13.0867 20.1318 14.7068 19.3151 16.0878C18.1299 18.0897 16.2608 19.4376 13.6913 20.1415C13.1899 20.2808 12.8214 20.3339 12.0546 20.3771C10.5407 20.4668 8.96712 20.2078 7.84833 19.6899C7.65246 19.6003 7.66906 19.5936 8.10728 19.5605C8.44591 19.5339 9.09327 19.4044 9.43522 19.2949C10.1092 19.0725 10.8096 18.6508 11.281 18.1827C11.5035 17.9603 11.5102 17.947 11.5102 17.7876C11.5102 17.6449 11.4969 17.6117 11.4072 17.5387C11.3375 17.4789 11.2678 17.4523 11.1782 17.4523C10.6569 17.4523 9.90996 17.1602 9.42194 16.7618C9.19287 16.5759 8.75465 15.9916 8.75465 15.8754C8.75465 15.8621 8.78453 15.8621 8.81773 15.8754C8.91401 15.9053 9.43522 15.8323 9.62777 15.7592C9.9 15.6563 9.98632 15.4572 9.8502 15.238C9.79709 15.1517 9.74397 15.1185 9.54478 15.0587C8.7115 14.813 7.99441 14.2088 7.67238 13.4818C7.60266 13.3191 7.50639 13.0103 7.44662 12.7348L7.42671 12.6485L7.61926 12.7149C7.85165 12.7979 8.37951 12.8311 8.51894 12.7714C8.64178 12.7215 8.73473 12.539 8.70485 12.4028C8.69157 12.3497 8.58866 12.2036 8.46251 12.0709C7.66242 11.221 7.28396 10.2615 7.39351 9.37513C7.42339 9.13279 7.53958 8.66801 7.57943 8.62485C7.58606 8.61821 7.74542 8.76097 7.93133 8.94023C8.38614 9.37513 8.69157 9.63741 9.15304 9.97935C10.6171 11.0683 12.0612 11.6691 13.5518 11.8086C14.3453 11.8816 14.6109 11.8417 14.7171 11.6393C14.7702 11.5364 14.7702 11.5098 14.7138 11.2077C14.4183 9.61085 15.4375 8.07044 17.0211 7.72185C17.4228 7.63221 17.9905 7.65546 18.3988 7.77497Z"
+                                                    fill="white" />
+                                                <defs>
+                                                    <linearGradient id="paint0_linear_0_1091" x1="1.189"
+                                                        y1="-9.11997e-06" x2="35.4005" y2="4.77811"
+                                                        gradientUnits="userSpaceOnUse">
+                                                        <stop offset="1" stop-color="#BAFF00" />
+                                                        <stop offset="1" stop-color="#00B2FE" />
+                                                    </linearGradient>
+                                                </defs>
+                                            </svg>
+                                        </a></li>
+                                    <li><a href="https://in.linkedin.com/" target="_blank"><svg width="28" height="28"
+                                                viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect width="28" height="28" rx="14" fill="url(#paint0_linear_0_1093)"
+                                                    fill-opacity="0.1" />
+                                                <g clip-path="url(#clip0_0_1093)">
+                                                    <path
+                                                        d="M7.67188 6.16866C6.93125 6.34054 6.34688 6.86554 6.0875 7.59366C6.025 7.77179 6.01562 7.85616 6.01562 8.26554C6.01562 8.69679 6.02188 8.75304 6.1 8.96241C6.22187 9.29679 6.35938 9.51241 6.625 9.78116C6.88125 10.0374 7.10625 10.1843 7.43125 10.3062C7.70938 10.4093 8.30938 10.4374 8.6375 10.3624C9.35 10.1937 9.9625 9.61241 10.1875 8.89054C10.2719 8.61866 10.3031 8.14679 10.2531 7.86554C10.1281 7.13741 9.5125 6.44366 8.79688 6.21866C8.51875 6.13116 7.95 6.10616 7.67188 6.16866ZM8.50938 6.73429C8.96875 6.85304 9.34063 7.15616 9.54375 7.56866C9.94375 8.38741 9.59375 9.33429 8.75 9.73116C8.35313 9.91554 7.76875 9.87179 7.34063 9.62179C6.8375 9.33116 6.5625 8.84991 6.5625 8.26241C6.5625 7.49054 7.10938 6.84366 7.875 6.70929C8.05 6.67804 8.34063 6.69054 8.50938 6.73429Z"
+                                                        fill="white" />
+                                                    <path
+                                                        d="M17.0785 10.7063C16.3879 10.8344 15.741 11.1531 15.266 11.6L15.0629 11.7875V11.5906C15.0597 11.2562 14.9004 11.0125 14.6316 10.9375C14.4722 10.8938 11.8691 10.8969 11.7097 10.9406C11.5441 10.9844 11.3535 11.1656 11.3129 11.3125C11.291 11.3906 11.2847 13.1125 11.2879 16.475L11.2972 21.5156L11.3691 21.6312C11.4097 21.6969 11.4941 21.7719 11.5754 21.8094C11.7035 21.8719 11.7535 21.875 13.316 21.875C14.9191 21.875 14.9222 21.875 15.0441 21.8031C15.1129 21.7656 15.1972 21.6937 15.2316 21.6469C15.2972 21.5594 15.2972 21.5437 15.3129 18.4437C15.3285 15.6937 15.3379 15.3125 15.3816 15.1844C15.5879 14.5938 15.9472 14.2469 16.4972 14.1062C17.0535 13.9656 17.8066 14.2844 18.0722 14.7781C18.2472 15.1 18.2504 15.1375 18.2504 18.4156C18.2504 21.2844 18.2535 21.4281 18.3097 21.55C18.341 21.6219 18.4222 21.7188 18.4879 21.7687L18.6035 21.8594L20.0441 21.8687C20.8379 21.875 21.5316 21.8687 21.5879 21.8594C21.7097 21.8375 21.916 21.6625 21.966 21.5375C21.9941 21.475 22.0004 20.4438 21.991 17.625L21.9816 13.7969L21.9097 13.5156C21.5254 12.0562 20.5097 11.0625 19.0629 10.7312C18.7316 10.6562 17.4347 10.6406 17.0785 10.7063ZM19.0004 11.2969C19.5441 11.4281 20.0129 11.6844 20.4254 12.075C20.8816 12.5031 21.1597 12.975 21.3566 13.6406C21.4191 13.8562 21.4191 13.9344 21.4285 17.5844L21.441 21.3125H20.141H18.8441L18.841 20.0844C18.8379 19.4125 18.8254 18.0094 18.8129 16.9688C18.7879 14.9125 18.791 14.9281 18.6004 14.5312C18.491 14.3031 18.1066 13.9187 17.8441 13.775C17.2285 13.4344 16.5629 13.4187 15.9222 13.7344C15.4785 13.95 15.1066 14.3562 14.9347 14.8094C14.7816 15.2156 14.7816 15.2469 14.7816 18.3781V21.3125H13.3285H11.8754V16.3906V11.4688L13.1972 11.475L14.516 11.4844L14.5316 12.3375L14.5472 13.1906L14.9816 12.7437C15.2222 12.4969 15.4941 12.2156 15.591 12.1156C15.991 11.6937 16.5035 11.4219 17.1566 11.2781C17.5191 11.2 18.641 11.2094 19.0004 11.2969Z"
+                                                        fill="white" />
+                                                    <path
+                                                        d="M6.88438 10.9375C6.8125 10.9531 6.72188 10.9812 6.68125 11.0031C6.5375 11.075 6.375 11.2656 6.3125 11.4281C6.25 11.5938 6.25 11.6781 6.25 16.3906C6.25 21.1031 6.25 21.1875 6.3125 21.3531C6.38438 21.5469 6.55 21.7188 6.75 21.8094C6.88438 21.8719 6.95312 21.875 8.1125 21.875C9.45312 21.875 9.4875 21.8719 9.71875 21.6875C9.78437 21.6344 9.875 21.5187 9.91875 21.4313L10 21.2688V16.4094V11.5469L9.925 11.3906C9.84063 11.2094 9.72813 11.0969 9.53125 10.9937C9.39062 10.9219 9.38125 10.9219 8.20312 10.9156C7.55 10.9125 6.95625 10.9219 6.88438 10.9375ZM9.35625 11.5594L9.4375 11.6344V16.4094V21.1844L9.35625 21.2469C9.275 21.3094 9.2375 21.3125 8.13437 21.3125H6.99375L6.90312 21.2219L6.8125 21.1312V16.4156C6.8125 12.7 6.82188 11.6875 6.85313 11.625C6.93125 11.4719 6.96562 11.4688 8.1625 11.475L9.275 11.4844L9.35625 11.5594Z"
+                                                        fill="white" />
+                                                </g>
+                                                <defs>
+                                                    <linearGradient id="paint0_linear_0_1093" x1="1.189"
+                                                        y1="-9.11997e-06" x2="35.4005" y2="4.77811"
+                                                        gradientUnits="userSpaceOnUse">
+                                                        <stop offset="1" stop-color="#BAFF00" />
+                                                        <stop offset="1" stop-color="#00B2FE" />
+                                                    </linearGradient>
+                                                    <clipPath id="clip0_0_1093">
+                                                        <rect width="16" height="16" fill="white"
+                                                            transform="translate(6 6)" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
+        </div>
+        <div class="gray-line mt-62"></div>
+        <div class="container mx-auto W-1140">
+            <p class="ff-outfit mb-0 fw-normal fs-sm lh-21 text-center c-white last_wrd p-12">© 2023 Cybertise
+            </p>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
