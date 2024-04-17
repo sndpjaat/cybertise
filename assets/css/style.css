@@ -105,6 +105,7 @@
      padding-left: 28px;
      padding-right: 28px;
      border: 1px solid transparent;
+     transition: all linear 300ms;
 }
 .btn-1:hover{
     color: var(--c-white);
